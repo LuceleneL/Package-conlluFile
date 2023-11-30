@@ -146,6 +146,7 @@ class conlluFile:
                             tk += 1
             elif ((SID != "") and (line[:-1] == "")):
                 if not (self.isSIDin(SID)):
+                    self.base.append([SID,TEXT,tk,dumpHead,logiS,""])
                         ## b[0] SID
                         ## b[1] TEXT
                         ## b[2] number of tokens (not including contracted words)
@@ -159,7 +160,7 @@ class conlluFile:
                 SID = ""
         if (SID != ""):
             if not (self.isSIDin(SID)):
-                self.base.append([SID,TEXT,tk,dumpHead,logiS])
+                self.base.append([SID,TEXT,tk,dumpHead,logiS,""])
                 self.s += 1
                 self.t += tk
             else:
