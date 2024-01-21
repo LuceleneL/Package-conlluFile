@@ -6,30 +6,30 @@
 #    conlluFile - the constructor from an input conllu file (name) - default no name creates an empty base
 #                                                                  - default considering contracted word (skipAg=True if not)
 # Acessors
-#    getBase(self):              # return the whole base
-#    getHeader(self):            # return in a single string the initial lines of the conllu
-#    getS(self):                 # return the number of sentences
-#    getT(self):                 # return the number of tokens (ignoring contracted words)
-#    getSandT(self):             # return the number of sentences and tokens
-#    getSentByID(self, SID):     # return a sentence by its SID (string) - return none if absent
-#    getSentByIndex(self, ind):  # return a sentence by its index (int) - return none if absent
-#    getSentInd(self, SID):      # return the index (int) of the sentence with SID (string) - return -1 if absent
-#    getSentID(self, ind):       # return the SID (string) for the sentence indexed by ind - return -1 if absent
-#    isSIDin(self, SID):         # return True if the SID is in the base
-#    isINDin(self, ind):         # return True if the index (int) is in the base
-#    isSentTagged(self, ind):    # return True if the sentence indexed by ind (int) has a non empty tag (b[5])
-#    numberSentSize(self, size): # return how many sentences in the base have this size
-#    sentSizeRange(self):        # return the smallest and largest sentence size within the base
-#    getAllSIDs(self):           # return the list with all sentence IDs
+#    getBase(self):              # returns the whole base
+#    getHeader(self):            # returns in a single string the initial lines of the conllu
+#    getS(self):                 # returns the number of sentences
+#    getT(self):                 # returns the number of tokens (ignoring contracted words)
+#    getSandT(self):             # returns the number of sentences and tokens
+#    getSentByID(self, SID):     # returns a sentence by its SID (string) - return none if absent
+#    getSentByIndex(self, ind):  # returns a sentence by its index (int) - return none if absent
+#    getSentInd(self, SID):      # returns the index (int) of the sentence with SID (string) - return -1 if absent
+#    getSentID(self, ind):       # returns the SID (string) for the sentence indexed by ind - return -1 if absent
+#    isSIDin(self, SID):         # returns True if the SID is in the base
+#    isINDin(self, ind):         # returns True if the index (int) is in the base
+#    isSentTagged(self, ind):    # returns True if the sentence indexed by ind (int) has a non empty tag (b[5])
+#    numberSentSize(self, size): # returns how many sentences in the base have this size
+#    sentSizeRange(self):        # returns the smallest and largest sentence size within the base
+#    getAllSIDs(self):           # returns the list with all sentence IDs
 # Mutators
-#    addToBase(self, name):          # add a conllu file (name) to the base considering contracted word or not (skipAg)
-#    removeSentInd(self, s):         # remove the sentence with id s from base
-#    removeSentSID(self, s):         # remove the sentence with SID s (string) from base
+#    addToBase(self, name):          # adds a conllu file (name) to the base considering contracted word or not (skipAg)
+#    removeSentInd(self, s):         # removes the sentence with id s from base
+#    removeSentSID(self, s):         # removes the sentence with SID s (string) from base
 #    tagTokenAtSID(self,s,t,tag):    # sets tag (string) for s is the SID (string), t is the token id (string)
 #    tagTokenAtSent(self,s,t,tag):   # sets tag (string) for s is the sentence index (int), t is the token id (string)
 #    tagSent(self,s,tag):            # sets tag (string) for s is the sentence index (int)
-#    setSentTags(self):              # set the sentence tags (additional info) based on the tokens tags (additional info)
-#    sortBase(self):                 # sort the base according to SID
+#    setSentTags(self):              # sets the sentence tags (additional info) based on the tokens tags (additional info)
+#    sortBase(self):                 # sorts the base according to SID
 # Prints
 #    printSent(self, ind, outfile, nodeprel=False): # prints out a sentence by its index (int) in a outfile with all 10 fields
 #    printHeaderToo(self, outfile, nodeprel=False): # prints out the whole base in an outfile
