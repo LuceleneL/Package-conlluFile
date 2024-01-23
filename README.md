@@ -1,5 +1,5 @@
-# conlluFile
-This repository has a Python 3 package to handle a CoNNL-U files (`.conllu`) in data structure (base)
+# Package conlluFile
+This repository has a Python 3 package to handle a CoNNL-U file (`.conllu`) in a data structure (base).
 
 # Contents
 The files in this repository are:
